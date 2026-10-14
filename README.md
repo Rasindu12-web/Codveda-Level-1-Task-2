@@ -65,3 +65,13 @@ Task: 2 – Interactive Form Validation
  Author
 
 Developed as part of the Codveda Technologies Front-End Development Internship.
+
+
+## Project Screenshots
+
+### Desktop View
+![Desktop View](desktop.png)
+
+### Mobile View
+![Mobile View](mobile.png)
+
