@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="InnovaTech Pro interactive form validation demo.">
+
+  <title>InnovaTech Pro | Smart Registration</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="layout">
+    <section class="brand">
+      <a class="logo" href="#" aria-label="InnovaTech Pro">
+        <span class="logo-icon">✦</span>
+        Innova<span>Tech.</span>
+      </a>
+
+      <div class="brand-body">
+        <span class="eyebrow"></span>
+
+        <h1>
+          Build Your <br>
+          <span>Digital Future.</span>
+        </h1>
+
+        <p>
+          
+        </p>
+
+        <div class="feature">
+          <span class=></span>
+          <div>
+            <strong></strong>
+            <small></small>
+          </div>
+        </div>
+
+        <div class="feature">
+          <span class=></span>
+          <div>
+            <strong></strong>
+            <small></small>
+          </div>
+        </div>
+
+        <div class="feature">
+          <span class=></span>
+          <div>
+            <strong></strong>
+            <small></small>
+          </div>
+        </div>
+      </div>
+
+      <p class="brand-bottom">
+       
+      </p>
+    </section>
+
+    <section class="form-area" aria-labelledby="formTitle">
+      <div class="form-card">
+
+        <div class="card-header">
+          <span class=""></span>
+          <h2 id="formTitle">Create an account</h2>
+          <p></p>
+        </div>
+
+        <form id="signupForm" novalidate>
+
+          <div class="field" data-field="name">
+            <label for="name">Full Name</label>
+            <input id="name" name="name"
+                   type="text"
+                   autocomplete="name"
+                   placeholder="Enter your full name"
+                   aria-describedby="nameError"
+                   aria-invalid="false"
+                   maxlength="80" required>
+            <small class="error" id="nameError"></small>
+          </div>
+
+          <div class="field" data-field="email">
+            <label for="email">Email Address</label>
+            <input id="email" name="email"
+                   type="email"
+                   autocomplete="email"
+                   placeholder="name@example.com"
+                   aria-describedby="emailError"
+                   aria-invalid="false" required>
+            <small class="error" id="emailError"></small>
+          </div>
+
+          <div class="field" data-field="phone">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone"
+                   type="tel"
+                   autocomplete="tel"
+                   inputmode="numeric"
+                   placeholder="07XXXXXXXX"
+                   aria-describedby="phoneError"
+                   aria-invalid="false"
+                   maxlength="10" required>
+            <small class="error" id="phoneError"></small>
+          </div>
+
+          <div class="field" data-field="password">
+            <label for="password">Password</label>
+            <div class="password-box">
+              <input id="password" name="password"
+                     type="password"
+                     autocomplete="new-password"
+                     placeholder="Create a strong password"
+                     aria-describedby="passwordHelp passwordError"
+                     aria-invalid="false" required>
+
+              <button class="toggle" id="togglePassword"
+                      type="button" aria-label="Show password"
+                      aria-pressed="false">
+                Show
+              </button>
+            </div>
+
+            <div class="strength" aria-hidden="true">
+              <span></span><span></span>
+              <span></span><span></span>
+            </div>
+            <p class="strength-text"
+               id="strengthText" aria-live="polite">
+              Password strength: Not entered
+            </p>
+
+            <ul class="requirements" id="passwordHelp">
+              <li data-rule="length">8+ characters</li>
+              <li data-rule="upper">Uppercase letter</li>
+              <li data-rule="lower">Lowercase letter</li>
+              <li data-rule="number">Number</li>
+              <li data-rule="symbol">Special character</li>
+            </ul>
+
+            <small class="error" id="passwordError"></small>
+          </div>
+
+          <div class="field" data-field="confirm">
+            <label for="confirm">Confirm Password</label>
+            <input id="confirm" name="confirm"
+                   type="password"
+                   autocomplete="new-password"
+                   placeholder="Repeat your password"
+                   aria-describedby="confirmError"
+                   aria-invalid="false" required>
+            <small class="error" id="confirmError"></small>
+          </div>
+
+          <button class="submit-btn" type="submit">
+            Validate Registration <span>→</span>
+          </button>
+
+          <div class="status" id="status"
+               role="status" aria-live="polite"></div>
+
+          <p class="privacy">
+           
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
